@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>array</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/bg.png" alt="">
+			</div>
+		</div>
+		<div class="bg-success" id="demo"></div>
+	</div>
+
+	<script>
+		// //scope javascript bagaimana kita mengakses variabel tersebut ada aturannya 
+		// ada var global dan var local//
+
+		// var text = "javascript"; // bersifat gobal//
+		// function getName(){
+		// 	var materi ="jQery";// local gabisa di akses di luar fungsi
+		// document.getElementById("demo").innerHTML = materi // harus di dlm fungsi jika di luar fungsi maka tidak berungsi atau error
+		// }
+		
+		var text = "javascript"; // bersifat gobal//
+		function getName(){
+			 materi ="jQery";// local gabisa di akses di luar fungsi
+			 // jika local berubah menjadi global  tidak usah menggunakan var  //
+		}
+		getName();
+		document.getElementById("demo").innerHTML = materi // harus di dlm fungsi jika di luar fungsi maka tidak berungsi atau error
+	</script>
+</body>
+</html>

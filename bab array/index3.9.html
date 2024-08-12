@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>array</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/bg.png" alt="">
+			</div>
+		</div>
+		<div class="bg-success" id="demo"></div>
+	</div>
+	
+	<script>
+		//  Metode split merupakan metode yang sering digunakan yang gunanya untuk memecah sebuah string, untuk dijadian menjadi sebuah array.//
+		// string.split("operator", limit)//
+		// operator adalah sebagai alat pemisah sedangkan limit adalah batasan hasilnya//
+		var elemen = document.getElementById("demo")
+
+		var text = "Belajar Javascript didumetschool";
+		var hasil = text.split(" ", 2)
+		// elemen.innerHTML = hasil.join(" - ") // join dalah salah satu untuk alat ppemisah //
+		elemen.innerHTML = hasil.length // length adalah mengetahui jumlah array//
+	</script>
+</body>
+</html>

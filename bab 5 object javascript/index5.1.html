@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>array</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/bg.png" alt="">
+			</div>
+		</div>
+		<div class="bg-success" id="demo"></div>
+	</div>
+
+	<script>
+		//object salah satu tipe data yang di gunakan 
+
+		 var komputer = {
+		 	//key: value//
+		 	nama: "Lenovo",
+		 	harga: 10000,
+		 	qty: 1
+		 }
+
+		 var text1 = "Nama komputer: " + komputer.nama
+		  var text2 = "Harga komputer: " + komputer.harga
+		   var text3 = "jumlah beli : " + komputer.qty
+		 document.getElementById("demo").innerHTML = text1 + text2 + text3
+	</script>
+</body>
+</html>

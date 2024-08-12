@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>metode angka</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/bg.png" alt="">
+			</div>
+		</div>
+		<div class="bg-success" id="demo"></div>
+	</div>
+
+	<script>
+		//substring di gunakan untuk mengambil bagian tertentu dri variabel , akan menimpa variabel yang lama dengan yang baru 
+
+		// var elemen	= document.getElementById("demo");
+		// var text = "duta media teknologi";
+		// var hasil = text.substring(0, 5)
+		// elemen.innerHTML = hasil
+
+		//substr mulai mengambil mulai dri mana sama panjang karakter dan spasi termasuk dalam hitungan 
+		// var elemen	= document.getElementById("demo");
+		// var text = "duta media teknologi";
+		// var hasil = text.substr(0, 9)
+		// elemen.innerHTML = hasil
+
+		// // parseInt mengubahtipe data string menjadi angka
+		// var elemen	= document.getElementById("demo");
+		// var text = "duta media teknologi";
+		// // var angka = 10 // kalo gapake kutip dua juga boleh dan bisa di run  jika mau di tambah dengan angka lain maka tidak usah make ""
+		// // jika di "10.2" dia akaan tetep menghasilkan bulat //
+		// var hasil = text.substr(0, 9)
+		// elemen.innerHTML = parseInt(angka) + 10 // jika di tambahkan 10 mana akan terjadinya perjumlahan 
+
+		//parseFloat tipe data uuntuk bilangan pecahan sedangkan perseInt untuk bilangan bulat saja 
+		var elemen	= document.getElementById("demo");
+		var text = "duta media teknologi";
+		var angka = "10.2" //jika dipersenFloat "10.2" dia akan menghasilkan bilangan koma  
+		var hasil = text.substr(0, 9)
+		elemen.innerHTML = parseFloat(angka) + 10
+	</script>
+</body>
+</html>

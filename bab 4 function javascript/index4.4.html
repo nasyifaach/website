@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>array</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/bg.png" alt="">
+			</div>
+		</div>
+		<div class="bg-success" id="demo"></div>
+	</div>
+
+	<script>
+		//return fungsi //
+		var elemen = document.getElementById("demo");
+		
+		// function getCount(){
+		// 	var x = 10
+		// 	var y = 2;
+		// 	return y
+		// }
+
+		function getCount(angka, angka2){
+			return angka + angka2
+		}
+
+		// var text = getName() + "terbaik dan nomor 2"
+		elemen.innerHTML ="hasilnya: " + getCount(10, 12) // hasil nya mengikuti si function nya//
+	</script>
+</body>
+</html>

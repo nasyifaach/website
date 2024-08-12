@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>javascript</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/bg.png" alt="">
+			</div>
+				<h4>belajar <small id="title">javascript</small></h4>
+				<input type="text" placeholder="name" id="input">
+				<code id="error"></code>
+		</div>
+	</div>
+	
+	<script>
+		//event focus dan blur //
+
+		var input = document.getElementById("input");
+		var error = document.getElementById("error");
+
+		input.onfocus = function(){
+			this.style.padding = "5px";
+			error.innerText =""
+			this.style.filter ="blur(0)"
+		}
+
+		input.onblur = function(){
+			if(this.value == ""){
+			error.innerText = "name is required";
+			this.style.padding = "0px";
+			this.style.filter ="blur(2px)"
+		}
+	}
+
+	</script>
+</body>
+</html>

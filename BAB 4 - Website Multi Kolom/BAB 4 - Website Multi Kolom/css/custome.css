@@ -1,0 +1,20 @@
+.nav-item a{
+	margin-right: 80px;
+}
+
+.set{
+	padding-top: 20px;
+}
+
+.list-group item{
+	padding: 0.75rem 0.25rem;
+}
+
+.footer{
+	padding: 10px;
+}
+
+.footer p{
+	margin-bottom: 0px;
+	text-align: center;
+}

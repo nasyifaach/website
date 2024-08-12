@@ -1,0 +1,212 @@
+
+*{
+	margin: 0; 
+	padding: 0;
+}
+
+body{
+	background: #FBF3D5;
+	margin: 0;
+	height: 100vh;
+	font-family: Arial, sans-serif;
+}
+
+img.logo{
+width: 150px;
+}
+
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.banner img {
+  width: 30%; 
+  margin-right: 200px;
+}
+
+#wrapper {
+  width: 100%;
+  max-width: 964px;
+  position: relative;
+  margin-top: 100px; 
+  margin-bottom: 20px;
+}
+
+#carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+#prev,
+#next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+#prev {
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  display: none;
+}
+
+#next {
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+#content {
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.item {
+  width: 300px;
+  height: 300px;
+}
+
+.item .caption h5{
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: arial;
+}
+
+.item .caption p{
+	text-align: center;
+}
+
+
+.navbar-collapse, .form-inline {
+  margin: 5px; 
+  padding: 5px; 
+}
+
+.navbar-nav {
+  list-style-type: none; 
+}
+
+.nav-item {
+  margin-right: 60px;
+}
+
+.nav-link {
+  text-decoration: none; 
+  color: #333; 
+
+.nav-link:hover {
+  color: #007bff; 
+}
+
+.learn h1{
+  font-size: 4rem; 
+  font-weight: bold;
+}
+
+.learn .text-primary{
+    font-size: 20px;
+}
+.learn p, .learn a{
+  color:#6E7897 ;
+}
+
+.learn .list-group-item{
+  padding: 0.20rem 0rem;
+  border: 0;
+}
+
+
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #5a5a5a;
+}
+
+.about-subtitle {
+    font-size: 1.25rem;
+    color: #8d8d8d;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #6a6a6a;
+}
+
+.section-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.team-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.team-role {
+    font-size: 1rem;
+    color: #777;
+}
+

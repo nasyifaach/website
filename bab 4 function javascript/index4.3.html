@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>array</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/bg.png" alt="">
+			</div>
+		</div>
+		<div class="bg-success" id="demo"></div>
+	</div>
+
+	<script>
+		//fuction parameter//
+		var elemen = document.getElementById("demo");
+		//menulis function harus di awali dengan nama"function"//
+		function getText(param){
+			var text = " terbaik dan nomor satu"
+			elemen.innerHTML = param + text 
+		}
+
+		function getCount(x, y = 1){
+			// y = y || 1;//
+
+			// if(typeof y == 'underfined'){
+			// 	y = 1; //cara kedua //
+			// }
+			var total = x + y 
+			console.log(total)
+		}
+
+		getCount(5)
+
+		getText("dumet school")// menjalankan fungsi 
+	</script>
+</body>
+</html>

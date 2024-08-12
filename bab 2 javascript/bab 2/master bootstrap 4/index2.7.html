@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS.</title>
+	<!-- syarat menghubungkan booststrap 4;
+	1. buatlah 1 file di dalam folder css dengan nama custome.css
+	2. hubungkan file boostrap.min.css yang ada di didalam folder css
+	3. hubungkan file custom.css yang ada di folder css
+	4. hubungkan file booststap.bundle.min.js yang ada di dalam folder js -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+	<div class="container">
+        <div class="row">
+            <div class="col-sm-8"><img src="image/mylogo.png" alt="" class="img-responsive"></div>
+        </div>
+
+        <div class="bg-success" id="demo"></div>
+    </div>
+
+    <script>
+    var elemen = document.getElementById("demo");
+    // else if digunakan kalo punya kondisi lebih dari satu
+    var angka = prompt("Masukkan angka:");
+        if (angka  % 2 == 0) { //% itu modulus, jika angka dibagi dua, arti dari line ini adalah 2 dibagi 2 = 0
+            elemen.innerHTML = angka + " adalah bilangan genap"; 
+        } else if (angka  % 2 == 1) {
+            elemen.innerHTML = angka + " adalah bilangan ganjil";
+        } else {
+            alert("anda memasukkan huruf.") 
+        }
+    </script>
+</body>
+</html>

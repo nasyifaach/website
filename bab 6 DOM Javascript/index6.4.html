@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>javascript</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/bg.png" alt="">
+			</div>
+				<h4">Freamwork <small>javascript</small> write less, do more </h4>
+					<ul id="demo">
+						<li>angular</li>
+						<li>react</li>
+						<li>jQuery</li>
+					</ul>
+		</div>
+	</div>
+	
+	<!-- //jika kita memilih id demo maka bisa meggunakan # jika milih class bisa make . // -->
+	<script>
+	var list = document.querySelectorAll("li"); // jika menambahkan all maka dia akan meanmpilkan keseluruhannya //
+	// var list = document.querySelector("li"); // memilih spesifik salah satu saja 
+	list[0].innerHTML = "vue.js"
+	list[2].innerHTML = "ember.js"
+	list[1].className = "bg-danger"
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>array</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/bg.png" alt="">
+			</div>
+		</div>
+		<div class="bg-success" id="demo"></div>
+	</div>
+
+	<script>
+		var elemen = document.getElementById("demo");
+		var buah = ["Mangga", "rambutan", "Mangga"]
+		var sayuran = ["batam", "kangkung"]
+		var angka = [1, 2, 3]
+
+		//splice(mulai, apus , tambah) (start, remove, add)//
+
+		// buah.splice(2, 1, "duku", "jambu")
+		// elemen.innerHTML = buah
+
+		// metode pop menghapus bagian array di akhir//
+		//metode shift di gnakanuntuk menghapus bagian array yang pertama//
+		//unshift sama seperti push untuk bedanya dia akan menambahkan array di awal sedangkan
+		 push dia menambahkan array diakhir//
+
+		buah.pop()
+		buah.push("jambu")
+
+		buah.shift();
+		buah.unshift("jeruk")
+
+		elemen.innerHTML = buah
+	</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>array</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/bg.png" alt="">
+			</div>
+		</div>
+		<div class="bg-success" id="demo"></div>
+	</div>
+
+	<script>
+		// sifat mutable artinya ketika kita mengoper objectnya ke dalam satu variabel lalu variabelnya saya ubah maka otomatis objek aslinya akan ikut berubah.
+		
+		var komputer = {
+			nama: "Lenovo",
+		 	harga: 10000,
+		 	qty: 1
+		}
+		var hardware = komputer;
+		hardware.nama = samsung;
+
+		document.getElementById("demo").innerHTML = komputer.nama
+	</script>
+</body>
+</html>

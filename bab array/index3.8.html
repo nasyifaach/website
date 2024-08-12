@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>array</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/bg.png" alt="">
+			</div>
+		</div>
+		<div class="bg-success" id="demo"></div>
+	</div>
+	
+	<script>
+		//math.random ini hanya menampilkan angka dri 0 sampai 1
+		// elemen.innerHTML = Math.floor(Math.random() * x) itu adalah conth rumus math.floor//
+		
+		var elemen = document.getElementById("demo");
+		var x = 5; // jarak//
+		// batas maxsimal di dapatkan dri nilai x + 2//
+		elemen.innerHTML = Math.floor(Math.random() * x) + 2
+	</script>
+</body>
+</html>

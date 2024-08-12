@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>javascript</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<style>
+		.del{text-decoration: line-through;}
+		.badge{cursor: pointer; border-radius: 0}
+		.bigSize{font-size: 20px;}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/bg.png" alt="">
+			</div>
+				<h4>framework <small>javascript</small></h4>
+				<ul id="demo">
+					<li>angular2 <span class="badge">&times;</span></li>
+					<li class="bg-warning">react</li>
+					<li>jQuery</li>
+				</ul>
+		</div>
+	</div>
+	
+	<script>
+		var remove = document.querySelector(".badge");
+		var li = document.querySelectorAll("li");
+		// li[2].className ="bg-info";
+		// li[1].className ="del"; cara metode class name dengn menghilangkan satu satu pda tag li 
+
+		li[2].className ="bg-info";
+		// li[1].className += "del"; // dengan cara memunculkan class nya yang lain menambahkan class baru//
+
+		// classlist//
+
+		li[1].classList.add("del", "bigSize");// metodee kedua  untuk menambah list dalam style 
+		li[1].classList.remove("del")// untuk menghapus 
+
+		// classlist toggle//
+		remove.addEventListener("click", removeList);
+		function removeList(){
+			// li[0].classList.add("del")//metode click pada tombol //
+			li[0].classList.toggle("del")//hanya bisa mengaktifkan satu class 
+		}
+	</script>
+</body>
+</html>

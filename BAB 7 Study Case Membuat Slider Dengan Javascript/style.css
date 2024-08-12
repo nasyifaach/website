@@ -1,0 +1,15 @@
+.img-thumbnail{
+	width: 25%;
+}
+
+.induk-thumbnail{
+	display: flex !important;
+}
+
+.thumbnail{
+	width: 100%;
+}
+
+#imgBig{
+	width: 100%;
+}

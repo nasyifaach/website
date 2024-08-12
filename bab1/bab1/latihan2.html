@@ -1,0 +1,34 @@
+<!-- 2. Menampilkan console log dua kali
+dengan menuliskan pesan yg berbeda
+Tentu pesannya didapatkan dari tulisan yg ada diHTML. 
+
+Gunakan HTML yg sudah disediakan
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript.</title>
+	<style>
+		body {
+			font-family: sans-serif;
+			margin: 10%
+		}
+	</style>
+</head>
+<body>
+	
+	<h3>Bab 1 - Javascript.</h3>
+	<p id="p1">#Selamat Pagi Juara</p>
+	<p id="p2">Dasar pemrograman untuk pemula</p>
+
+	<script>
+		// Tulis disini
+		var textP1 = document.getElementById("p1").innerText;
+		var textP2 = document.getElementById("p2").innerText;
+		console.log("#Selamat Pagi Juara");
+		console.log("Dasar pemrograman untuk pemula");
+	</script>
+</body>
+</html>

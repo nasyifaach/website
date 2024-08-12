@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS.</title>
+	<!-- syarat menghubungkan booststrap 4;
+	1. buatlah 1 file di dalam folder css dengan nama custome.css
+	2. hubungkan file boostrap.min.css yang ada di didalam folder css
+	3. hubungkan file custom.css yang ada di folder css
+	4. hubungkan file booststap.bundle.min.js yang ada di dalam folder js -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+	<div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Belajar [Javascript] <small>Fundamental</small></h3>
+                <p class="bg-info" id="demo"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // tipe data string, nilai harus dibungkus pake kutip 2/1
+    //jika nilai ada tanda kutip 1, nilai dibungkus kutip 2
+    //jika nilai ada tanda kutip 2, nilai dibungkus kutip 1
+    var mobil = "Toyota";
+    var text = "Belajar dihari jum'at";
+    var text2 = '<a href="">Ini adalah link</a>'
+    document.getElementById("demo").innerHTML = text2;
+    </script>
+</body>
+</html>

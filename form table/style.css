@@ -1,0 +1,56 @@
+*{padding: 0; margin: 0;}
+
+body{font-family: arial;}
+
+.container{
+	width: 500px;
+	background: #F9F3CC;
+	margin:auto;
+	padding: 20px;
+}
+
+h3{
+	background: #FF8080 ;
+	padding: 10px;
+	margin-bottom: 5px;
+	color: #F6FDC3 ;
+}
+
+table{
+	width: 500px;
+	color: #867070;
+}
+
+input[type="text"],input[type="email"],input[type="password"]{
+	width: 325px;
+	padding: 10x;
+	border-radius: 5px;
+	margin: 10px 0;
+	border: 1px solid black;
+}
+
+select{
+	width: 112px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid black;
+	margin: 10px 0;
+}
+
+p{
+	margin-top: 10px;
+}
+
+a{
+	color: #6096B4;
+}
+
+input[type="submit"],input[type="reset"]{
+	padding: 7px 12px;
+	border-radius: 5px;
+	border: 1px solid green;
+	background: #D7C0AE;
+	font-weight: bold;
+	font-size: 20px;
+	color: #F2D8D8;
+}

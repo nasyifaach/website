@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>array</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/bg.png" alt="">
+			</div>
+		</div>
+		<div class="bg-success" id="demo"></div>
+	</div>
+
+	<script>
+		//object salah satu tipe data yang di gunakan 
+
+		 var komputer = {
+		 	//key: value//
+		 	nama: "Lenovo",
+		 	harga: 10000,
+		 	qty: 1,
+		 	tag: ["teknologi", "informmasi"],
+		 	getName: function(){
+		 		return "Nama komputer" + this.nama
+		 	}, // memisahkan metode satu dengan metode dua harus di beri koma //
+
+		 	getTag: function(){
+		 		return this.tag
+		 	},
+		 	getCount: function(){
+		 		var hasil = this.harga * this.qty
+		 		return "hasil belanjanya: " +hasil
+		 	}
+		 }
+
+		 console.log(komputer.getTag())
+		// var text = "Nama komputer: " + komputer.['nama']
+		 document.getElementById("demo").innerHTML = komputer.tag
+
+
+
+		// // cara kedua //
+		//  var mahasiswa = new Object();
+		//  mahasiswa.nama = "sipa";
+		//  mahasiswa['jurusan']= "sistem infomasi"
+
+		//  // var text = "Nama komputer: " + komputer.['nama']
+		//  document.getElementById("demo").innerHTML = "jurusannya: " +mahasiswa.jurusan
+	</script>
+</body>
+</html>

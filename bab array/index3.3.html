@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>array</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/bg.png" alt="">
+			</div>
+		</div>
+		<div class="bg-success" id="demo"></div>
+	</div>
+
+	<script>
+		var elemen = document.getElementById("demo");
+		var buah = ["Mangga", "rambutan", "duku"]
+		var sayuran = ["batam", "kangkung"]
+
+		// var hasil = buah.concat(sayuran)
+		// elemen.innerHTML = hasil.join("_") //join untuk pemisah tanpa harus ada  koma tapi bisa menggunakan tanda yang lain //
+
+
+		var hasil = buah.concat(sayuran)
+		elemen.innerHTML = hasil.length //length di gunakan untuk mengetahui jumlah array nya
+
+		//sort di gunakan sesuai abjab jika di run//
+
+		// buah.sort()
+		// elemen.innerHTML = buah;
+
+		// //reverse di gunakan kebalikan nilai dari array mulai dri akhir ke awal bukan berdasarkan abjab tapi dri penulisan 
+		// contohnya :
+		// buah.reverse()//
+
+		// buah.reverse()
+		// elemen.innerHTML = buah;
+	</script>
+</body>
+</html>

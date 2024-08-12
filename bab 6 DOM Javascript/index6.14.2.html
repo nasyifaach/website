@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>javascript</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/bg.png" alt="">
+			</div>
+			<form action="" class="form-group">
+				<input type="text" id="input" placeholder="Materi">
+				<button type="submit" class="btn btn-succes btn-sm">Tampil</button>
+			</form>
+			<p>Belajar Materi <strong id="demo" class="bg-primary">?</strong></p>
+		</div>
+	</div>
+	
+	<script>
+		// event onsubmit//
+		var formular = document.forms[0];
+		var input = document.querySelector("#input");
+		var elemen = document.getElementById("demo");
+		formular.onsubmit = inputSubmit;
+
+		function inputSubmit(event){
+			event.preventDefault(); // untuk mematikan forms aslinya pada tag forms di atas//
+			var text = input.value;
+			elemen.innerText =text
+			input.value ="";// menghilangkan tulisan di dlm forms sehingga bisa memasukan kata lain//
+		}
+
+	</script>
+</body>
+</html>

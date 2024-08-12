@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>javascript</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/bg.png" alt="">
+			</div>
+		</div>
+		<h4">Freamwork <small>javascript</small> write less, do more </h4>
+		<div class="thumbnail"></div>
+		<div class="thumbnail"></div>
+		<div class="thumbnail"></div>
+	</div>
+
+	<script>
+		//clas dan tag
+		// getElementsByClassName knp di elemnnya menambahkan s karna setiap class mempunyai lebh dri satu //
+
+		// var classBox = document.getElementsByClassName("thumbnail")
+		// classBox[0].innerHTML ="angularjs";
+		// classBox[2].innerHTML ="react dan redux"
+
+
+		// tag 
+
+		var classBox = document.getElementsByClassName("thumbnail")
+		classBox[0].innerHTML ="angularjs";
+		classBox[1].innerHTML = "<mark>vuejs</mark>"
+		classBox[2].innerHTML ="react dan redux";
+
+		var small =	document.getElementsByTagName("small");
+		small[0].onclick = function(){
+			this.innerHTML ="jQuery"
+		}
+
+	</script>
+</body>
+</html>

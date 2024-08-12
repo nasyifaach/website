@@ -1,0 +1,86 @@
+*{margin: 0; padding: 0;}
+
+body {background: #BFB29E; margin-right: 20px;}
+
+.header{background: #2ecc71;width: 800px; margin:auto; padding: 20px;}
+.header .logo img{margin: auto; display: flex;}
+.header .logo p{text-align: center; color: #ffffff; font-family: helvetica; font-weight: lighter; padding-top: 2px; font-size: 20px;}
+
+
+
+.article{
+	width: 800px;
+	margin: auto;
+	background-color: #fff;
+	padding: 20px;
+}
+
+.article .row{
+	display:flex;
+}
+
+.article .row .box{
+	width: 25%;
+	padding: 8px;
+}
+
+.article .row .box img{
+	width: 100%;
+}
+
+.article .row .box a{
+	text-decoration: none ;
+}
+
+.article .row .box a p{
+	text-align: center;
+}
+
+
+
+.article .row .box-detail{
+	width: 50%;
+	padding: 8px;
+}
+
+.article .row .box-detail img{
+	width: 100%;
+}
+
+.article .row .box-detail h2{
+	width: 100%;
+	margin: 5px;
+	text: block;
+}
+
+.article .row .box-detail h4{
+	width: 100%;
+    color: red;
+	margin: 5px;
+	text: block;
+}
+
+.article .row .box-detail p{
+	width: 100%;
+	margin: 5px;
+}
+
+.article .row .box-detail input[type=submit]{
+	width: 50%;
+	padding: 8px;
+	color: white;
+	background-color: red;
+	margin-top: 20px;
+}
+
+.footer{
+	background: #2ecc71; 
+	width: 800px; 
+	margin: auto;
+	padding: 20px; 
+	text-align: center;
+}
+
+.footer span{
+	color:#ffffff;
+}

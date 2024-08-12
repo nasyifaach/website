@@ -1,0 +1,102 @@
+tentukan ada brp halaman 
+
+1.home
+2.about us
+3.product
+4.detail produk
+5.contact us 
+
+
+
+di halaman home
+1.logo
+2.menu
+3.tambahkan gambar product sebelah kanan (1)
+4.tambah product (4) dibawah 
+
+
+catatan 
+1.nav ada jarak di hapus
+2. uk menu di perbesar
+
+
+
+catatan php 
+
+tag 
+
+<?php
+
+?>
+
+1. echo 
+<?php
+$bahasa = "php";
+
+echo $bahasa;
+
+2. comment 
+// ini adalah komentar 1 baris //
+
+//ini adalah komentar lebih dari 1 baris //
+
+3. variable
+	 
+	 $bahasa = "php";
+	 
+4. operator 
+
+$angka1 = 6;
+$angka2 = 2;
+
+echo $angka1 + $angka2 = "<br>";
+echo $angka1 - $angka2 = "<br>";
+echo $angka1 / $angka2 = "<br>";
+echo $angka1 * $angka2 = "<br>";
+echo $angka1 % $angka2 = "<br>";
+
+<?
+
+6. if-elseif-else.php
+
+<?php
+
+$data1 = 10;
+$data2 = 5;
+
+if ($data1 > $data2) {
+    echo "Benar. $data1 > $data2 <br>";
+}
+
+if ($data1 == $data2) {
+    echo "Benar. $data1 == $data2 <br>";
+} else {
+    echo "Salah. $data1 != $data2 <br>";
+}
+
+if ($data1 < $data2) {
+    echo "Benar. $data1 < $data2 <br>";
+} else if ($data1 == $data2) {
+    echo "Benar. $data1 == $data2 <br>";
+} else if ($data1 != $data2) {
+    echo "Benar. $data1 != $data2 <br>";
+} else {
+    echo "Salah semuanya!";
+}
+
+?>
+
+7. <?php
+
+ $data1 = 10;
+$data2 = 5;
+
+if ($data1 > $data2) {
+    echo "Benar. $data1 > $data2 <br>";
+}
+
+switch (true){
+	case($data1 > $data2);
+	echo  'SWITCH: benar. $data1 > $data2 <br>';
+}
+?>

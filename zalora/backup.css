@@ -1,0 +1,26 @@
+*{margin: 0; padding: 0;}
+
+body {background: #BFB29E; margin-right: 20px;}
+
+.header{background: #2ecc71;width: 800px; margin:auto; padding: 20px;}
+.header .logo img{margin: auto; display: flex;}
+.header .logo p{text-align: center; color: #ffffff; font-family: helvetica; font-weight: lighter; padding-top: 2px; font-size: 20px;}
+
+.catalog {background: #ecf0f1;width: 670px; padding: 10px; padding-top: 20px; text-align: center;display: flex; margin: 25px;}
+.catalog .cat{
+	width: 50%;
+}
+.catalog .cat img{background: #ffffff; padding: 10px; border-radius: 10px; margin-right: 670px; width: 300px; height: 300px;}
+.catalog .cat p{ color: black;margin: 1px; padding: 10px; display:flex; width: 200px; margin-right: 75px; padding-top: 2px; text-align: justify; margin-bottom: 10px;}
+
+.banner{ width:50%; margin-top: 20px; text-align: center;}
+.banner .box{padding: 10px; margin: 5px; margin-left: 100px;}
+.banner .box p{color: black; margin: 0px; padding: 10px; display:flex; width: 300px; margin-left: 100px; padding-top: 2px; text-align: justify; margin-bottom: 10px;}
+}
+
+.catalog1 {background: #ecf0f1;width: 670spx; padding: 10px; text-align: center;display: flex;margin: auto; padding-bottom: 45px;}
+.catalog1 .cat1 img{background: #ffffff; padding: 5px; border-radius: 10px; margin-right: 10px;}
+.catalog1 .cat1 p{margin: 1px; color: black; display: flex;}
+
+.footer{background: #2ecc71; width: 800px; margin: auto; padding: 20spx; text-align: center;}
+.footer span{color:#ffffff;}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>array</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/bg.png" alt="">
+			</div>
+		</div>
+		<div class="bg-success" id="demo"></div>
+	</div>
+
+	<script>
+		//metode toFixed gunaanya menentukan berapa angka di belkang koma//
+
+		var elemen	= document.getElementById("demo");
+		// var pecahan = 3.33334
+		// elemen.innerHTML = pecahan.toFixed(2);
+
+		//toString mengubah tipe data numer berubah jadi string //
+
+		var pecahan = 3.33334
+		var angka1 = 10;
+		var angka2 = 100;
+		// elemen.innerHTML = angka1 + angka2; // jika tidak make tostring 
+		elemen.innerHTML = angka1.toString() + angka2; // jika make tostring kalo make tostring maka angka 1 dan angka 2 akan di gabung 
+
+	</script>
+</body>
+</html>

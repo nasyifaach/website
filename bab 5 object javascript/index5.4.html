@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>array</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/bg.png" alt="">
+			</div>
+		</div>
+		<div class="bg-success" id="demo"></div>
+	</div>
+
+	<script>
+		// object prototype
+		var elemen = document.getElementById("demo");
+		function Book(title, author){
+			this.title = title;
+			this.author = author;
+
+		}
+
+		Book.prototype.price = 100;
+
+		var book = new Book("judul javascriot fundamental", "sipa");
+		var book2 = new Book("jQuery", "maulana");
+		elemen.innerHTML ="Harga Buku: $" +book2.price
+	</script>
+</body>
+</html>
